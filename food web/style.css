@@ -5,48 +5,109 @@
     padding: 0;
 }
 
-body{
-    background-color: #F5F5F5;
-    width: 1728px;
-    height: 1150px;
+html, body{
+    background-color: #f5f5f5;
+    height: 100%;
 }
 
-.container{
-    width: 100vh;
-}
-
-nav{
+.header{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
 }
 
 .logo{
     position: relative;
     width: 162px;
     height: 53px;
-    padding-left: 100px;
-    margin-top: -20px;
+    margin-top: 25px;
+    margin-left: 180px;
+    float: left;
+    display: flex;
+}
+
+.logo i{
+    font-size: 53px;
+    color: #EB8E8E;
+}
+
+.logo p{
+    font-family: dongle;
+    font-size: 40px;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.mode{
+    color: #9b9b9b;
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 55px;
+    margin-left: 700px;
+    background: none;
+    transition: 0.3s ease;
+    color: inherit;
+}
+
+.mode:hover{
+    color: rgb(56, 55, 55);
+}
+
+.dark {
+    background-color: rgb(19, 20, 20);
+    color: #f5f5f5;
+}
+
+.navigation{
+    margin-left: 150px;
+}
+
+nav{
+    padding: 50px;
+    display: flex;
 }
 
 .navbar{
-    float: left;
     display: flex;
-    margin-left: 550px;
+    float: left;
+    margin-left: 350px;
+    background: #f5f5f5fa;
+    border-radius: 10px;
 }
-.navbar a{
+
+.navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+.navbar li a{
     text-decoration: none;
     font-size: 24px;
     color: black;
     font-family: dongle;
-    padding-left: 40px;
-    float: left;
-    display: flex;
+    transition: 0.3s ease; 
 }
 
-.navbar a:hover{
-    color: grey;
+.navbar li a:hover,
+.navbar li a.active {
+    color: #EB8E8E;
 }
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #EB8E8E;
+    position: absolute;
+    bottom: 7px;
+    left: 25px;
+}
+
 
 .btn-primary{
     position: relative;
@@ -61,7 +122,7 @@ nav{
     padding-left: 35px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-left: 70px;
+    margin-left: 80px;
 }
 
 .search i{
@@ -71,6 +132,7 @@ nav{
    margin-left: -175px;
    margin-top: 10px;
    cursor: pointer;
+   color: black;
 }
 
 .search i:hover{
@@ -94,6 +156,16 @@ nav{
 
 .keranjang .tombol i:hover{
     color: grey;
+}
+
+#container{
+    min-height: 100%;
+    background-color: inherit;
+}
+
+#main{
+    overflow: auto;
+    padding-bottom: 500px;
 }
 
 .tulisan .top{
@@ -155,6 +227,7 @@ nav{
     font-size: 32px;
     text-align: center;
     margin-top: -10px;
+    color: black;
 }
 
 .krawu .asal{
@@ -163,6 +236,7 @@ nav{
     font-size: 20px;
     text-align: center;
     margin-top: -16px;
+    color: black;
 }
 
 .krawu .harga{
@@ -170,6 +244,7 @@ nav{
     font-size: 24px;
     text-align: center;
     margin-top: -5px;
+    color: black;
 }
 
 .krawu button{
@@ -212,6 +287,7 @@ nav{
     font-size: 32px;
     text-align: center;
     margin-top: -15px;
+    color: black;
 }
 
 .soto .asal{
@@ -220,6 +296,7 @@ nav{
     font-size: 20px;
     text-align: center;
     margin-top: -16px;
+    color: black;
 }
 
 .soto .harga{
@@ -227,6 +304,7 @@ nav{
     font-size: 24px;
     text-align: center;
     margin-top: -5px;
+    color: black;
 }
 
 .soto button{
@@ -269,6 +347,7 @@ nav{
     font-size: 32px;
     text-align: center;
     margin-top: -15px;
+    color: black;
 }
 
 .ayam .asal{
@@ -277,6 +356,7 @@ nav{
     font-size: 20px;
     text-align: center;
     margin-top: -16px;
+    color: black;
 }
 
 .ayam .harga{
@@ -284,6 +364,7 @@ nav{
     font-size: 24px;
     text-align: center;
     margin-top: -5px;
+    color: black;
 }
 
 .ayam button{
@@ -326,6 +407,7 @@ nav{
     font-size: 32px;
     text-align: center;
     margin-top: 8px;
+    color: black;
 }
 
 .rawon .asal{
@@ -334,6 +416,7 @@ nav{
     font-size: 20px;
     text-align: center;
     margin-top: -16px;
+    color: black;
 }
 
 .rawon .harga{
@@ -341,6 +424,7 @@ nav{
     font-size: 24px;
     text-align: center;
     margin-top: -5px;
+    color: black;
 }
 
 .rawon button{
@@ -393,6 +477,7 @@ nav{
     font-size: 40px;
     margin-left: 170px;
     margin-top: -50px;
+    color: black;
 }
 
 .degan .s{
@@ -406,6 +491,7 @@ nav{
     font-size: 12px;
     margin-left: 150px;
     margin-top: 30px;
+    color: black;
 }
 
 .degan .harga{
@@ -414,6 +500,7 @@ nav{
     font-size: 36px;
     margin-left: 150px;
     margin-top: -10px;
+    color: black;
 }
 
 .degan .tambah{
@@ -451,6 +538,7 @@ nav{
     font-size: 40px;
     margin-left: 170px;
     margin-top: -81px;
+    color: black;
 }
 
 .teh .s{
@@ -464,6 +552,7 @@ nav{
     font-size: 12px;
     margin-left: 150px;
     margin-top: 29px;
+    color: black;
 }
 
 .teh .harga{
@@ -472,6 +561,7 @@ nav{
     font-size: 36px;
     margin-left: 150px;
     margin-top: -10px;
+    color: black;
 }
 
 .teh .tambah{
@@ -508,6 +598,7 @@ nav{
     font-size: 40px;
     margin-left: 170px;
     margin-top: -71px;
+    color: black;
 }
 
 .jahe .s{
@@ -521,6 +612,7 @@ nav{
     font-size: 12px;
     margin-left: 150px;
     margin-top: 35px;
+    color: black;
 }
 
 .jahe .harga{
@@ -529,6 +621,7 @@ nav{
     font-size: 36px;
     margin-left: 150px;
     margin-top: -10px;
+    color: black;
 }
 
 .jahe .tambah{
@@ -536,4 +629,26 @@ nav{
     margin-left: 300px;
     margin-top: -22px;
     cursor: pointer;
+}
+
+#footer{
+    position: relative;
+    background: #535353;
+    height: 50px;
+    color: #fff;
+    clear: both;
+    width: 100%;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    font-family: dongle;
+    padding: 15px;
 }
