@@ -19,7 +19,6 @@ html, body{
 }
 
 .logo{
-    position: relative;
     width: 162px;
     height: 53px;
     margin-top: 25px;
@@ -139,6 +138,21 @@ nav{
     color: grey;
 }
 
+.keranjang{
+    position: relative;
+}
+
+.jumlah{
+    width: 17px;
+    height: 17px;
+    background-color: #EB8E8E;
+    border-radius: 50%;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    border: 1px solid white;
+}
+
 .keranjang .tombol{
     width: 47px;
     height: 38px;
@@ -158,9 +172,11 @@ nav{
     color: grey;
 }
 
+
 #container{
     min-height: 100%;
     background-color: inherit;
+    position: relative;
 }
 
 #main{
@@ -637,7 +653,9 @@ nav{
     height: 50px;
     color: #fff;
     clear: both;
-    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .footer-content{
