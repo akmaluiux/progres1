@@ -3,18 +3,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html, body{
+body{
     background-color: #f5f5f5;
     height: 100%;
+    width: 100%;
 }
 
 .header{
     z-index: 999;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -24,6 +29,8 @@ html, body{
     margin-top: 25px;
     margin-left: 180px;
     float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -47,16 +54,18 @@ html, body{
     margin-top: 55px;
     margin-left: 700px;
     background: none;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     color: inherit;
 }
 
 .mode:hover{
-    color: rgb(56, 55, 55);
+    opacity: 50%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
 }
 
 .dark {
-    background-color: rgb(19, 20, 20);
+    background-color: #11171f;
     color: #f5f5f5;
 }
 
@@ -66,10 +75,14 @@ html, body{
 
 nav{
     padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     float: left;
     margin-left: 350px;
@@ -88,6 +101,7 @@ nav{
     font-size: 24px;
     color: black;
     font-family: dongle;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease; 
 }
 
@@ -96,8 +110,8 @@ nav{
     color: #EB8E8E;
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after{
+.navbar li a.active:after,
+.navbar li a:hover:after{
     content: "";
     width: 30%;
     height: 2px;
@@ -128,7 +142,7 @@ nav{
    position: absolute;
    width: 20px;
    height: 20px;
-   margin-left: -175px;
+   margin-left: -178px;
    margin-top: 10px;
    cursor: pointer;
    color: black;
@@ -202,7 +216,7 @@ nav{
 }
 
 .tulisan p{
-    font-family: Roboto;
+    font-family: Roboto bold;
     font-size: 24px;
     margin-left: 185px;
     margin-top: 40px;
@@ -210,9 +224,9 @@ nav{
 }
 
 .box{
-    position: static;
     background: rgba(240, 152, 25, 0.85);
     background: -webkit-linear-gradient(167deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
+    background: -webkit-linear-gradient(283deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
     background: linear-gradient(167deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
     width: 400px;
     height: 543px;
@@ -279,7 +293,7 @@ nav{
 }
 
 .krawu button:hover{
-    color: rgb(248, 232, 6);
+    color: rgba(26, 26, 26, 0.24);
 }
 
 .box .soto{
@@ -339,7 +353,7 @@ nav{
 }
 
 .soto button:hover{
-    color: rgb(248, 232, 6);
+    color: rgba(26, 26, 26, 0.24);
 }
 
 .box .ayam{
@@ -399,7 +413,7 @@ nav{
 }
 
 .ayam button:hover{
-    color: rgb(248, 232, 6);
+    color: rgba(26, 26, 26, 0.24);
 }
 
 .box .rawon{
@@ -459,7 +473,7 @@ nav{
 }
 
 .rawon button:hover{
-    color: rgb(248, 232, 6);
+    color: rgba(26, 26, 26, 0.24);
 }
 
 .es{
@@ -656,13 +670,23 @@ nav{
     right: 0;
     left: 0;
     bottom: 0;
+    width: 100%;
 }
 
 .footer-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 
