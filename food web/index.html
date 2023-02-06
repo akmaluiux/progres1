@@ -5,23 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhaharin</title>
+    <link rel="icon" href="logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        ::placeholder {
-          color: rgb(8, 8, 8);
-          opacity: 1; /* Firefox */
-        }
-
-        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-          color: rgb(8, 8, 8);
-        }
-
-        ::-ms-input-placeholder { /* Microsoft Edge */
-          color: rgb(8, 8, 8);
-        }
-    </style>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -56,51 +44,51 @@
         </nav>
     </div>
 
-    <div id="container">
+    <div class="container">
         <div class="teks">
             <h1 class="top">Cari Makanan</h1>
             <h1 class="bottom">Dhaharin aja</h1>
+            <div class="garis"></div>
             <p>Dhaharin menyediakan makanan khas dari berbagai daerah<br> 
                 di Indonesia yang sangat lezat dan bergizi.
             </p>
         </div>
+        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#F5BB33" d="M30.7,-41.9C44.9,-32,64.8,-29.8,72.4,-20.3C79.9,-10.8,75.1,6,67.7,20C60.4,33.9,50.6,45,38.9,52.8C27.2,60.6,13.6,65.1,0.1,64.9C-13.3,64.7,-26.7,59.9,-38.1,52C-49.6,44.1,-59.1,33.2,-60.6,21.4C-62.1,9.6,-55.6,-3.2,-51.6,-17.1C-47.6,-31,-46,-46.1,-37.8,-57.9C-29.6,-69.7,-14.8,-78.3,-3.3,-73.8C8.3,-69.3,16.6,-51.8,30.7,-41.9Z" transform="translate(100 100)" />
+        </svg>
         <div class="box">
             <div class="krawu">
                 <img src="image/krawu.svg" alt="">
                 <p class="menu">Nasi krawu</p>
                 <p class="asal">Khas Gresik</p>
-                <p class="harga">20k</p>
-                <a href="#" class="href"><button type="button">BELI</button></a>
+                <button type="button" id="b-1">20K</button>
             </div>
 
             <div class="soto">
                 <img src="image/soto.svg" alt="">
                 <p class="menu">Soto Ayam</p>
                 <p class="asal">Khas Lamongan</p>
-                <p class="harga">15k</p>
-                <a href="#" class="href"><button type="button">BELI</button></a>
+                <button type="button" id="b-2">15K</button>
             </div>
 
             <div class="ayam">
                 <img src="image/ayam.svg" alt="">
                 <p class="menu">Ayam Kremes</p>
                 <p class="asal">Khas Jawa</p>
-                <p class="harga">18k</p>
-                <a href="#" class="href"><button type="button">BELI</button></a>
+                <button type="button" id="b-3">18K</button>
             </div>
 
             <div class="rawon">
                 <img src="image/rawon.svg" alt="">
                 <p class="menu">Rawon</p>
                 <p class="asal">Khas Surabaya</p>
-                <p class="harga">25k</p>
-                <a href="#" class="href"><button type="button">BELI</button></a>
+                <button type="button" id="b-4">25K</button>
             </div>
         </div>
 
         <div class="es">
             <div class="degan">
-                <img src="image/degan.svg" alt="">
+                <img class="d-1" src="image/degan.svg" alt="">
                 <a href="#" class="bulet">
                     <img class="o" src="image/bulet.svg" alt="">
                 </a>
@@ -114,7 +102,7 @@
             </div>
 
             <div class="teh">
-                <img src="image/teh.svg" alt="">
+                <img class="te-1" src="image/teh.svg" alt="">
                 <a href="" class="href">
                     <img class="o" src="image/bulet.svg" alt="">
                 </a>
@@ -128,7 +116,7 @@
             </div>
 
             <div class="jahe">
-                <img src="image/jahe.svg" alt="">
+                <img class="j-1" src="image/jahe.svg" alt="">
                 <a href="" class="href">
                     <img class="o" src="image/bulet.svg" alt="">
                 </a>
@@ -146,6 +134,27 @@
                 <p>Copyright 2022. by kv design.</p>
             </div>
         </footer>
+
+        <div class="buy">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="t-1">
+                <input type="text" placeholder="Nama" id="b-nama" required>
+                <input type="text" placeholder="Alamat" id="b-alamat" required>
+                <input type="text" placeholder="Pesan" id="b-pesan" required>
+            </div>
+            <div class="count">
+                <button class="min">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <input type="number" class="c-1">
+                <button class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <button id="b-btn">BELI</button>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

@@ -1,43 +1,38 @@
-// alert("hello word!!!!")
+let b1=document.querySelector("#b-1"),
+    b2=document.querySelector("#b-2"),
+    b3=document.querySelector("#b-3"),
+    b4=document.querySelector("#b-4"),
+    cl=document.querySelector(".close"),
+    pl=document.querySelector(".plus"),
+    mn=document.querySelector(".min"),
+    n=1,
+    body = document.body;
 
-let body = document.body;
+const buy=document.querySelector('.buy')
 
+
+//darkmode
 function darkMode() {
     console.log('dark mode di klik');
     body.classList.toggle("dark");
 }
 
-const container = document.querySelector(".container"),
-      pwShowHide = document.querySelectorAll(".showHidePw"),
-      pwFields = document.querySelectorAll(".password"),
-      signUp = document.querySelector(".signup-link"),
-      login = document.querySelector(".login-link");
+//buy
 
-    //   js code to show/hide password and change icon
-    pwShowHide.forEach(eyeIcon =>{
-        eyeIcon.addEventListener("click", ()=>{
-            pwFields.forEach(pwField =>{
-                if(pwField.type ==="password"){
-                    pwField.type = "text";
+b1.addEventListener('click',function(){
+    buy.classList.add('show')
+});
+b2.addEventListener('click',function(){
+    buy.classList.add('show')
+});
+b3.addEventListener('click',function(){
+    buy.classList.add('show')
+});
+b4.addEventListener('click',function(){
+    buy.classList.add('show')
+});
 
-                    pwShowHide.forEach(icon =>{
-                        icon.classList.replace("uil-eye-slash", "uil-eye");
-                    })
-                }else{
-                    pwField.type = "password";
+cl.addEventListener('click',function(){
+    buy.classList.remove("show")
+})
 
-                    pwShowHide.forEach(icon =>{
-                        icon.classList.replace("uil-eye", "uil-eye-slash");
-                    })
-                }
-            }) 
-        })
-    })
-
-    // js code to appear signup and login form
-    signUp.addEventListener("click", ( )=>{
-        container.classList.add("active");
-    });
-    login.addEventListener("click", ( )=>{
-        container.classList.remove("active");
-    });

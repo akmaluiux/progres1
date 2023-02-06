@@ -8,27 +8,26 @@
 
 body{
     background-color: #f5f5f5;
-    height: 100%;
-    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .header{
     z-index: 999;
     position: sticky;
     display: flex;
+    margin-top: 1rem;
 }
 
 .logo{
-    width: 162px;
-    height: 53px;
-    margin-top: 25px;
-    margin-left: 180px;
+    margin-top: 20px;
+    margin-left: 6rem;
     display: flex;
 }
 
 .logo i{
     font-size: 53px;
-    color: #EB8E8E;
+    color: #F5BB33;
 }
 
 .logo p{
@@ -40,11 +39,10 @@ body{
 
 .mode{
     color: #9b9b9b;
-    position: absolute;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 55px;
-    margin-left: 700px;
+    margin-top: 54px;
+    margin-left: 15rem;
     background: none;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
@@ -63,17 +61,13 @@ body{
 
 nav{
     padding: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+    margin-left: 10rem;
 }
 
 .navbar{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     float: left;
-    margin-left: 350px;
     background: #f5f5f5fa;
     border-radius: 10px;
 }
@@ -95,7 +89,7 @@ nav{
 
 .navbar li a:hover,
 .navbar li a.active {
-    color: #EB8E8E;
+    color: #F5BB33;
 }
 
 .navbar li a.active:after,
@@ -103,7 +97,7 @@ nav{
     content: "";
     width: 30%;
     height: 2px;
-    background: #EB8E8E;
+    background: #F5BB33;
     position: absolute;
     bottom: 7px;
     left: 25px;
@@ -111,6 +105,7 @@ nav{
 
 .search{
     display: flex;
+    margin-left: 9rem;
 }
 
 .btn-primary{
@@ -144,7 +139,6 @@ nav{
 
 .keranjang{
     border-color: 1px solid black;
-    margin-left: 1px;
     width: 47px;
     height: 38px;
     font-size: 17px;
@@ -172,20 +166,18 @@ nav{
 }
 
 
-#container{
-    min-height: 100%;
-    background-color: inherit;
-    position: relative;
+.container{
+    background-color: inherit;   
 }
 
-#main{
-    overflow: auto;
-    padding-bottom: 500px;
+.teks{
+    position: absolute;
+    margin-top: -8rem;
 }
 
 .teks .top{
     font-family: nunito;
-    font-size: 50px;
+    font-size: 70px;
     font-style: bold;
     margin-left: 185px;
     margin-top: 220px;
@@ -193,40 +185,47 @@ nav{
 
 .teks .bottom{
     font-family: nunito;
-    font-size: 70px;
+    font-size: 90px;
     font-style: bold;
     margin-left: 284px;
-    color: #EB8E8E;
+    color: #F5BB33;
     margin-top: -15px;
+}
+
+.garis{
+    width: 30rem; 
+    height: 0.1rem; 
+    background-color: #F5BB33; 
+    margin-left: 11rem;
 }
 
 .teks p{
     font-family: roboto;
     font-size: 15px;
     margin-left: 185px;
-    margin-top: 20px;
-    font-style: bold;
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+.blob{
+    position: absolute;
+    width: 90rem;
+    margin-top: -45rem;
+    margin-left: 50rem;
+    z-index: -4;
 }
 
 .box{
     position: absolute;
-    background: rgba(240, 152, 25, 0.85);
-    background: -webkit-linear-gradient(167deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
-    background: -webkit-linear-gradient(283deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
-    background: linear-gradient(167deg, rgba(240, 152, 25, 0.85) 0%, rgba(237, 222, 93, 0.15) 100%);
-    width: 350px;
-    height: 443px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;;
-    margin-left: 1170px;
-    margin-top: -25rem;
+    margin-left: 78rem;
+    margin-top: -2rem;
 }
 
 .box .krawu{
     position: absolute;
     background-color: #ffffffb7;
-    width: 168px;
-    height: 173px;
+    width: 165px;
+    height: 165px;
     margin-left: -60px;
     margin-top: 80px;
     border-radius: 15px;
@@ -234,60 +233,52 @@ nav{
 }
 
 .krawu img{
-    margin-left: 15px;
+    margin-left: 13px;
     margin-top: -45px;
+    width: 8.5rem;
 }
 
 .krawu .menu{
     font-family: dongle;
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -15px;
     color: black;
 }
 
 .krawu .asal{
     font-family: dongle;
     font-style: light;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin-top: -16px;
     color: black;
 }
 
-.krawu .harga{
-    font-family: dongle;
-    font-size: 24px;
-    text-align: center;
-    margin-top: -5px;
-    color: black;
-}
-
 .krawu button{
     background-color: #FEBB0F;
-    width: 67px;
-    height: 30px;
+    width: 60px;
+    height: 25px;
     text-align: center;
-    padding-top: px;
     border-radius: 10px;
-    margin-left: 53px;
-    margin-top: -7px;
+    margin-left: 52px;
+    margin-top: -1px;
     border: none;
     font-family: dongle;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .krawu button:hover{
-    color: rgba(26, 26, 26, 0.24);
+    background-color: rgba(243, 180, 6, 0.507);
 }
 
 .box .soto{
     position: absolute;
     background-color: #ffffffb7;
-    width: 168px;
-    height: 173px;
-    margin-left: 130px;
+    width: 165px;
+    height: 165px;
+    margin-left: 125px;
     margin-top: 80px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
@@ -296,11 +287,12 @@ nav{
 .soto img{
     margin-left: 15px;
     margin-top: -45px;
+    width: 8.5rem;
 }
 
 .soto .menu{
     font-family: dongle;
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     margin-top: -15px;
     color: black;
@@ -309,58 +301,50 @@ nav{
 .soto .asal{
     font-family: dongle;
     font-style: light;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin-top: -16px;
     color: black;
 }
 
-.soto .harga{
-    font-family: dongle;
-    font-size: 24px;
-    text-align: center;
-    margin-top: -5px;
-    color: black;
-}
-
 .soto button{
     background-color: #FEBB0F;
-    width: 67px;
-    height: 30px;
+    width: 60px;
+    height: 25px;
     text-align: center;
-    padding-top: px;
     border-radius: 10px;
-    margin-left: 53px;
-    margin-top: -7px;
+    margin-left: 52px;
+    margin-top: -1px;
     border: none;
     font-family: dongle;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .soto button:hover{
-    color: rgba(26, 26, 26, 0.24);
+    background-color: rgba(243, 180, 6, 0.507);
 }
 
 .box .ayam{
     position: absolute;
     background-color: #ffffffb7;
-    width: 168px;
-    height: 173px;
+    width: 165px;
+    height: 165px;
     margin-left: -60px;
-    margin-top: 320px;
+    margin-top: 280px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
 }
 
 .ayam img{
     margin-left: 15px;
-    margin-top: -45px;
+    margin-top: -35px;
+    width: 8rem;
 }
 
 .ayam .menu{
     font-family: dongle;
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
     margin-top: -15px;
     color: black;
@@ -369,129 +353,115 @@ nav{
 .ayam .asal{
     font-family: dongle;
     font-style: light;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin-top: -16px;
     color: black;
 }
 
-.ayam .harga{
-    font-family: dongle;
-    font-size: 24px;
-    text-align: center;
-    margin-top: -5px;
-    color: black;
-}
-
 .ayam button{
     background-color: #FEBB0F;
-    width: 67px;
-    height: 30px;
+    width: 60px;
+    height: 25px;
     text-align: center;
     padding-top: px;
     border-radius: 10px;
-    margin-left: 53px;
+    margin-left: 52px;
     margin-top: -1px;
     border: none;
     font-family: dongle;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .ayam button:hover{
-    color: rgba(26, 26, 26, 0.24);
+    background-color: rgba(243, 180, 6, 0.507);
 }
 
 .box .rawon{
     position: absolute;
     background-color: #ffffffb7;
-    width: 168px;
-    height: 173px;
-    margin-left: 130px;
-    margin-top: 320px;
+    width: 165px;
+    height: 165px;
+    margin-left: 125px;
+    margin-top: 280px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
 }
 
 .rawon img{
-    margin-left: 1px;
-    margin-top: -35px;
+    margin-left: -3px;
+    margin-top: -20px;
+    width: 10.5rem;
 }
 
 .rawon .menu{
     font-family: dongle;
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 8px;
+    margin-top: -5px;
     color: black;
 }
 
 .rawon .asal{
     font-family: dongle;
     font-style: light;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin-top: -16px;
     color: black;
 }
 
-.rawon .harga{
-    font-family: dongle;
-    font-size: 24px;
-    text-align: center;
-    margin-top: -5px;
-    color: black;
-}
-
 .rawon button{
     background-color: #FEBB0F;
-    width: 67px;
-    height: 30px;
+    width: 60px;
+    height: 25px;
     text-align: center;
     padding-top: px;
     border-radius: 10px;
-    margin-left: 53px;
+    margin-left: 52px;
     margin-top: -1px;
     border: none;
     font-family: dongle;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .rawon button:hover{
-    color: rgba(26, 26, 26, 0.24);
+    background-color: rgba(243, 180, 6, 0.507);  
 }
 
 .es{
-    margin-left: -90px;
+    margin-left: 10rem;
+    position: absolute;
+    margin-top: 22rem;
 }
 .es .degan{
     position: absolute;
     background-color: #ffffffb7;
-    width: 367px;
-    height: 230px;
-    margin-left: 230px;
+    width: 340px;
+    height: 210px;
+    margin-left: 30px;
     margin-top: 130px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
 }
-
-.degan img{
+.degan .d-1{
     margin-left: -20px;
     margin-top: -50px;
 }
 
 .degan .o{
     position: absolute;
-    margin-left: 170px;
-    margin-top: 20px;
+    margin-left: 155px;
+    margin-top: 1rem;
 }
 
 
 .degan .menu{
     font-family: dongle;
     font-size: 40px;
-    margin-left: 170px;
+    margin-left: 150px;
     margin-top: -50px;
     color: black;
 }
@@ -499,14 +469,14 @@ nav{
 .degan .s{
     position: absolute;
     margin-left: 130px;
-    margin-top: -17px;
+    margin-top: -3px;
 }
 
 .degan .bintang{
+    position: absolute;
     font-family: Roboto;
     font-size: 12px;
     margin-left: 150px;
-    margin-top: 30px;
     color: black;
 }
 
@@ -515,14 +485,13 @@ nav{
     font-family: dongle;
     font-size: 36px;
     margin-left: 150px;
-    margin-top: -10px;
+    margin-top: 1px;
     color: black;
 }
 
 .degan .tambah{
-    position: absolute;
-    margin-left: 300px;
-    margin-top: -18px;
+    margin-left: 280px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
@@ -530,29 +499,29 @@ nav{
 .es .teh{
     position: absolute;
     background-color: #ffffffb7;
-    width: 367px;
-    height: 230px;
-    margin-left: 800px;
+    width: 340px;
+    height: 210px;
+    margin-left: 510px;
     margin-top: 130px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
 }
 
-.teh img{
+.teh .te-1{
     margin-left: -70px;
     margin-top: -70px;
 }
 
 .teh .o{
     position: absolute;
-    margin-left: 145px;
+    margin-left: 135px;
     margin-top: 20px;
 }
 
 .teh .menu{
     font-family: dongle;
     font-size: 40px;
-    margin-left: 170px;
+    margin-left: 140px;
     margin-top: -81px;
     color: black;
 }
@@ -560,14 +529,14 @@ nav{
 .teh .s{
     position: absolute;
     margin-left: 130px;
-    margin-top: -17px;
+    margin-top: -3px;
 }
 
 .teh .bintang{
+    position: absolute;
     font-family: Roboto;
     font-size: 12px;
     margin-left: 150px;
-    margin-top: 29px;
     color: black;
 }
 
@@ -576,58 +545,56 @@ nav{
     font-family: dongle;
     font-size: 36px;
     margin-left: 150px;
-    margin-top: -10px;
     color: black;
 }
 
 .teh .tambah{
-    position: absolute;
-    margin-left: 300px;
-    margin-top: -22px;
+    margin-left: 280px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
 .es .jahe{
     position: absolute;
     background-color: #ffffffb7;
-    width: 367px;
-    height: 230px;
-    margin-left: 1350px;
+    width: 340px;
+    height: 210px;
+    margin-left: 1000px;
     margin-top: 130px;
     border-radius: 15px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
 }
 
-.jahe img{
+.jahe .j-1{
     margin-left: -90px;
     margin-top: -30px;
 }
 
 .jahe .o{
     position: absolute;
-    margin-left: 145px;
+    margin-left: 135px;
     margin-top: 20px;
 }
 
 .jahe .menu{
     font-family: dongle;
     font-size: 40px;
-    margin-left: 170px;
+    margin-left: 160px;
     margin-top: -71px;
     color: black;
 }
 
 .jahe .s{
     position: absolute;
-    margin-left: 130px;
-    margin-top: -17px;
+    margin-left: 160px;
+    margin-top: -3px;
 }
 
 .jahe .bintang{
+    position: absolute;
     font-family: Roboto;
     font-size: 12px;
-    margin-left: 150px;
-    margin-top: 35px;
+    margin-left: 180px;
     color: black;
 }
 
@@ -635,32 +602,26 @@ nav{
     position: absolute;
     font-family: dongle;
     font-size: 36px;
-    margin-left: 150px;
-    margin-top: -10px;
+    margin-left: 180px;
     color: black;
 }
 
 .jahe .tambah{
-    position: absolute;
-    margin-left: 300px;
-    margin-top: -22px;
+    margin-left: 280px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
 .footer{
     position: absolute;
-    margin-top: 25rem;
-    background: #535353;
+    bottom: 0;
+    background: #202833;
     width: 100%;
     height: 50px;
 }
 
 .footer-content{
     color: #fff;
-    clear: both;
-    right: 0;
-    left: 0;
-    bottom: 0;
     text-align: center;
 }
 
@@ -669,6 +630,618 @@ nav{
     padding: 15px;
 }
 
-/* @media (max-width: 1280px){
-    .
-} */
+/* window buy */
+
+.buy{
+    margin-left: 40rem;
+    position: absolute;
+    width: 25rem;
+    height: 35rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.158);
+    display: none;
+    transition: all 0.5s;
+}
+
+.buy.show{
+    display: inline;
+}
+
+.close{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2.5rem;
+    color: #FEBB0F;
+    top: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.close:hover{
+    opacity: 40%;
+}
+
+.t-1{
+    margin-top: 7rem;
+}
+
+#b-nama{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 10rem;
+    height: 40px;
+    width: 80%;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#b-nama:is(:focus, :valid){
+    border-bottom-color: #FEBB0F;
+}
+
+#b-alamat{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 13rem;
+    height: 40px;
+    width: 80%;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#b-alamat:is(:focus, :valid){
+    border-bottom-color: #FEBB0F;
+}
+
+#b-pesan{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 16rem;
+    height: 40px;
+    width: 80%;
+    border: none;
+    padding: 0 30px;
+    outline: none;
+    font-size: 12px;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.2s ease;
+}
+
+#b-pesan:is(:focus, :valid){
+    border-bottom-color: #FEBB0F;
+}
+
+.count{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    border: 1px solid #FEBB0F;
+    width: 5rem;
+    height: 1.7rem;
+}
+
+
+.c-1{
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 1.2rem;
+    height: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-left: 1.9rem;
+    margin-top: 1px;
+}
+
+.c-1[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.min{
+    position: absolute;
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #FEBB0F;
+    margin-top: 4px
+}
+
+.min:hover{
+    color: #11171f;
+}
+
+.plus{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    color: #FEBB0F;
+    margin-left: 3.5rem;
+    margin-top: 4px;
+}
+
+.plus:hover{
+    color: #11171f;
+}
+
+
+#b-btn{
+    position: absolute;
+    width: 70%;
+    height: 2rem;
+    background-color: #FEBB0F;
+    border: none;
+    border-radius: 10px;
+    margin-left: 3.5rem;
+    margin-top: 24rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#b-btn:hover{
+    opacity: 70%;
+}
+
+@media (max-width: 1280px){
+    .logo{
+        margin-left: 4rem;
+    }
+
+    .logo i{
+        font-size: 35px;
+    }
+
+    .logo p{
+        font-size: 30px;
+        margin-top: 7px;
+    }
+
+    .mode{
+        margin-left: 8rem;
+        margin-top: 2.5rem;
+        font-size: 15px;
+    }
+
+    nav{
+        margin-top: -0.9rem;
+        margin-left: 5rem;
+    }
+
+    .navbar{
+        border-radius: 5px;
+    }
+    
+    .navbar li a{
+        font-size: 15px;
+    }
+
+    .navbar li a.active:after,
+    .navbar li a:hover:after{
+    bottom: 4px;
+    }
+
+    .search{
+        display: flex;
+        margin-left: 10rem;
+    }
+    
+    .btn-primary{
+        width: 130px;
+        height: 25px;
+        font-size: 25px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-left: -20px;
+    }
+    
+    .search i{
+       font-size: 12px;
+       margin-left: -120px;
+       margin-top: 6px;
+    }
+    
+    .search i:hover{
+        color: grey;
+    }
+    
+    .keranjang{
+        border-color: 1px solid black;
+        width: 30px;
+        height: 25px;
+        font-size: 17px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgb(243, 241, 241);
+        border: 2px solid black;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    
+    .keranjang i{
+        margin-left: 5px;
+    }
+    
+    .jumlah{
+        margin-left: 1.2rem;
+        margin-top: -0.3rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .blob{
+        width: 55rem;
+        margin-left: 35.5rem;
+        margin-top: -26.5rem;
+    }
+
+    .teks{
+        margin-top: -10rem;
+        margin-left: -3.5rem;
+    }
+    
+    .teks .top{
+        font-family: nunito;
+        font-size: 50px;
+        font-style: bold;
+        margin-left: 185px;
+        margin-top: 220px;
+    }
+    
+    .teks .bottom{
+        font-family: nunito;
+        font-size: 60px;
+        font-style: bold;
+        margin-left: 284px;
+        color: #F5BB33;
+        margin-top: -15px;
+    }
+
+    .garis{
+        width: 18rem;
+    }
+    
+    .teks p{
+        font-family: roboto;
+        font-size: 10px;
+        margin-left: 185px;
+        margin-top: 0.6rem;
+        font-weight: bold;
+    }
+
+    .box{
+        margin-left: 55rem;
+        margin-top: -4.5rem;
+    }
+
+    .box .krawu{
+        width: 110px;
+        height: 110px;
+    }
+
+    .krawu img{
+        width: 5.5rem;
+        margin-top: -2rem;
+        margin-left: 0.7rem;
+    }
+
+    .krawu .menu{
+        font-size: 25px;
+        margin-top: -15px;
+    }
+
+    .krawu .asal{
+        font-size: 14px;
+    }
+
+    .krawu button{
+        width: 3rem;
+        font-size: 15px;
+        height: 1.2rem;
+        border-radius: 8px;
+        margin-left: 2rem;
+    }
+
+    .box .soto{
+        width: 110px;
+        height: 110px;
+        margin-left: 4rem;
+    }
+
+    .soto img{
+        width: 5.5rem;
+        margin-top: -2rem;
+        margin-left: 0.7rem;
+    }
+
+    .soto .menu{
+        font-size: 25px;
+        margin-top: -15px;
+    }
+
+    .soto .asal{
+        font-size: 14px;
+    }
+    .soto button{
+        width: 3rem;
+        font-size: 15px;
+        height: 1.2rem;
+        border-radius: 8px;
+        margin-left: 2rem;
+    }
+
+    .box .ayam{
+        width: 110px;
+        height: 110px;
+        margin-top: 14rem;
+    }
+
+    .ayam img{
+        width: 5.5rem;
+        margin-top: -2rem;
+        margin-left: 0.7rem;
+    }
+
+    .ayam .menu{
+        font-size: 25px;
+        margin-top: -15px;
+    }
+
+    .ayam .asal{
+        font-size: 14px;
+    }
+    .ayam button{
+        width: 3rem;
+        font-size: 15px;
+        height: 1.2rem;
+        border-radius: 8px;
+        margin-left: 2rem;
+    }
+
+    .box .rawon{
+        width: 110px;
+        height: 110px;
+        margin-top: 14rem;
+        margin-left: 4rem;
+    }
+
+    .rawon img{
+        width: 6.5rem;
+        margin-top: -1rem;
+        margin-left: 0.2rem;
+    }
+
+    .rawon .menu{
+        font-size: 25px;
+        margin-top: -7px;
+    }
+
+    .rawon .asal{
+        font-size: 14px;
+    }
+    .rawon button{
+        width: 3rem;
+        font-size: 15px;
+        height: 1.2rem;
+        border-radius: 8px;
+        margin-left: 2rem;
+    }
+
+    .es{
+        margin-left: 4rem;
+        margin-top: 10rem;
+    }
+
+    .es .degan{
+        width: 200px;
+        height: 125px;
+        margin-left: 5rem;
+        margin-top: 130px;
+        border-radius: 15px;
+    }
+    
+    .degan .d-1{
+        width: 5.5rem;
+        margin-left: -10px;
+        margin-top: -25px;
+    }
+    
+    .degan .o{
+        margin-left: 85px;
+        margin-top: 0.8rem;
+        width: 1.5rem;
+    }
+    
+    
+    .degan .menu{
+        font-size: 25px;
+        margin-left: 80px;
+        margin-top: -30px;
+    }
+    
+    .degan .s{
+        width: 0.8rem;
+        margin-left: 78px;
+        margin-top: -6px;
+    }
+    
+    .degan .bintang{
+        font-size: 10px;
+        margin-left: 93px;
+        margin-top: -4px;
+    }
+    
+    .degan .harga{
+        font-size: 25px;
+        margin-left: 93px;
+        margin-top: 4px;
+    }
+    
+    .degan .tambah{
+        width: 32px;
+        height: 32px;
+        margin-left: 158px;
+        margin-top: -1px;
+    }
+    
+    .es .teh{
+        width: 200px;
+        height: 125px;
+        margin-left: 23rem;
+        margin-top: 130px;
+        border-radius: 15px;
+    }
+    
+    .teh .te-1{
+        width: 7rem;
+        margin-left: -30px;
+        margin-top: -25px;
+    }
+    
+    .teh .o{
+        margin-left: 80px;
+        margin-top: 0.8rem;
+        width: 1.5rem;
+    }
+    
+    
+    .teh .menu{
+        font-size: 25px;
+        margin-left: 80px;
+        margin-top: -40px;
+    }
+    
+    .teh .s{
+        width: 0.8rem;
+        margin-left: 78px;
+        margin-top: -6px;
+    }
+    
+    .teh .bintang{
+        font-size: 10px;
+        margin-left: 93px;
+        margin-top: -4px;
+    }
+    
+    .teh .harga{
+        font-size: 25px;
+        margin-left: 93px;
+        margin-top: 3px;
+    }
+    
+    .teh .tambah{
+        width: 32px;
+        height: 32px;
+        margin-left: 158px;
+        margin-top: -4px;
+    }
+
+    .es .jahe{
+        width: 200px;
+        height: 125px;
+        margin-left: 41rem;
+        margin-top: 130px;
+        border-radius: 15px;
+    }
+    
+    .jahe .j-1{
+        width: 8rem;
+        margin-left: -35px;
+        margin-top: -10px;
+    }
+    
+    .jahe .o{
+        margin-left: 70px;
+        margin-top: 0.8rem;
+        width: 1.5rem;
+    }
+    
+    
+    .jahe .menu{
+        font-size: 25px;
+        margin-left: 95px;
+        margin-top: -30px;
+    }
+    
+    .jahe .s{
+        width: 0.8rem;
+        margin-left: 93px;
+        margin-top: -3px;
+    }
+    
+    .jahe .bintang{
+        font-size: 10px;
+        margin-left: 108px;
+    }
+    
+    .jahe .harga{
+        font-size: 25px;
+        margin-left: 108px;
+        margin-top: 3px;
+    }
+    
+    .jahe .tambah{
+        width: 32px;
+        height: 32px;
+        margin-left: 158px;
+        margin-top: -4px;
+    }
+
+    .buy{
+        width: 18rem;
+        height: 24rem;
+        margin-left: 29rem;
+    }
+
+    .t-1{
+        margin-top: -2rem;
+    }
+
+    .close{
+        margin-top: -1rem;
+        right: 1.5rem;
+    }
+
+    #b-nama{
+        font-size: 10px;
+        padding: 0 20px;
+    }
+
+    #b-alamat{
+        font-size: 10px;
+        padding: 0 20px;
+    }
+
+    #b-pesan{
+        font-size: 10px;
+        padding: 0 20px;
+    }
+
+    #b-btn{
+        height: 25px;
+        font-size: 10px;
+        width: 60%;
+        margin-top: 23.5rem;
+    }
+
+    .footer{
+        height: 30px;
+    }
+
+
+    .footer-content p{
+        padding: 5px;
+    }
+
+}
